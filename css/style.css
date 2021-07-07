@@ -5,6 +5,9 @@
 	text-decoration: none;
 	font-family: arial, sans-serif;
 }
+title{
+	
+}
 body {
 	display: flex;
 	flex-direction: column;
