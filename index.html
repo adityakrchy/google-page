@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Google</title>
+	<link rel="icon"  href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="./public/css/style.css">
+</head>
+<body>
+      <nav>
+      	<a href="#">Gmail</a>
+      	<a href="#">Images</a>
+      	<img src="./public/img/g-menu.PNG">
+      	<a href="registeration"><button>Sign in</button></a>
+      </nav>
+      <section class="section-1">
+      	<img src="./public/img/logo.png" class="logo">
+      	<form action="" id="main" method="POST"><br><br>
+      		<div class="s-box">
+      			<img src="./public/img/search.svg" class="search-icon">
+      			<input type="text" class="s-input" id="search-box">
+      			<img src="./public/img/vs.svg" class="vs-icon">
+      			<input type="submit" class="s-btn" value="Google Search">
+      			<input type="submit" class="s-btn" value="I'm Feeling Lucky">
+      		</div>
+      	</form>
+      	<div class="lang">
+      		Google offered in:
+      		<a href="#">English</a>
+      		<a href="#">Hindi</a>
+      	</div>
+      </section>
+      <footer>
+      	<h4>India</h4>
+      	<div class="links">
+      		<div class="link-1">
+      			<a href="#">Advertising</a>
+      			<a href="#">Business</a>
+      			<a href="#">About</a>
+      			<a href="#">How Search works</a>
+      		</div>
+      		<div class="link-2">
+      			<a href="#">Privacy</a>
+      			<a href="#">Terms</a>
+      			<a href="#">Settings</a>
+      		</div>
+      	</div>
+      </footer>
+
+</body>
+<script>
+    document.querySelector('#main').onsubmit = function(e){
+        e.preventDefault();
+        var search =document.querySelector('#search-box').value;
+        location.href=('https://google.com/search?q='+search)
+    };   
+</script>
+</html>
